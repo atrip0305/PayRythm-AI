@@ -1,0 +1,42 @@
+{
+  "name": "payrythm-ai",
+  "version": "1.0.0",
+  "description": "AI-powered financial operator built for the PayPal AI Hackathon.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx src/server.ts",
+  "build": "tsc",
+  "start": "node dist/src/server.js",
+  "token": "tsx scripts/get-token.ts",
+  "create-order": "tsx scripts/create-order.ts",
+  "capture-order": "tsx scripts/capture-order.ts",
+  "transactions": "tsx scripts/transaction-search.ts",
+  "invoices": "tsx scripts/invoices.ts",
+  "payouts": "tsx scripts/payouts.ts",
+  "refund": "tsx scripts/refunds.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atrip0305/payRythm-ai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/atrip0305/payRythm-ai/issues"
+  },
+  "homepage": "https://github.com/atrip0305/payRythm-ai#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@paypal/paypal-server-sdk": "^2.5.0",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1"
+  }
+}
